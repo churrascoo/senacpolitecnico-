@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-UA-compatible"
+        content="IE=edge">
+        <title> JavaScript</title>
+    </head>
+    <body>
+        <script>
+            var i, Qtdalunos, n1, n2,n3,n4, med, medturma;
+            Qtdalunos = parseFloat(prompt("Quantidade de alunos"))
+
+            
+            while(i < Qtdalunos) {
+                n1 = parseFloat(prompt("Digite a nota 1ª do aluno" + ( i + 1) + ":"));
+                n2 = parseFloat(prompt("Digite a nota 2ª do aluno" + (i + 1) + ":"));
+                n3 = parseFloat(prompt("Digite a nota 3ª do aluno" + (i + 1) + ":"));
+                n4 = parseFloat(prompt("Digite a nota 4ª do aluno" + (i + 1) + ":"));
+                med = (n1 + n2 + n3 + n4) /4;
+                document.write("A media do" + (i + 1) + "º aluno é" + med + "<br/>");
+                medturma = medturma + med;
+                i++;
+            }
+            medturma = medturma / Qtdalunos;
+            document.write("A media da turma é" + medturma + "<br/>");
+            
+        </script>
+    </body>
+</html>
